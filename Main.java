@@ -36,16 +36,25 @@ public class Main{
         Company.service(); 
         
     */
-    Programmer p1 = new Programmer();
-    p1.setId("3");
-    p1.setName("John");
-    p1.setSalary(40000.0);
-    p1.displayEmployee();
+    /* Inheritance Mother&Child
+    Programmer p1 = new Programmer("John",30000.0);
 
+    Accounting a1 = new Accounting("Anan",25000.0);
+    */
+
+    /*//Overloading Method
+    Programmer e1 = new Programmer();
+    e1.skill("Java");
+
+    Programmer e2 = new Programmer();
+    e2.skill("C","C#","Python");
+    */
+
+    //Overriding
+    Programmer e1 = new Programmer();
+    e1.bonus();
     Accounting a1 = new Accounting();
-    a1.setName("Anan");
-    a1.setSalary(30000.0);
-    a1.displayEmployee();
+    a1.bonus();
 
     }
 

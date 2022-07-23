@@ -1,4 +1,4 @@
-class Employee{
+abstract class Employee{
     // Attribute
     private String id;
     private String name;
@@ -10,16 +10,15 @@ class Employee{
 
     //Defualt Constructor
     public Employee(){
-
+        System.out.println("I'm Employee");
     }
-    public Employee(String id, String name){
-        
-    }
-    public Employee(String id, String name, Double salary){
+    
+    public Employee(String name, Double salary){
         //System.out.println("Create Object Complete");
-        this.id=id;
+        
         this.name=name;
         this.salary=salary;
+        displayEmployee();
     }
 
     //Method
@@ -33,7 +32,7 @@ class Employee{
         this.salary = salary;
     }
     public void displayEmployee(){
-        System.out.println("ID = "+this.id);
+        //System.out.println("ID = "+this.id);
         System.out.println("Name = "+this.name);
         System.out.println("Salary = "+this.salary);
     }
@@ -46,4 +45,5 @@ class Employee{
     public Double getSalary(){
         return this.salary;
     }
+    public abstract void bonus();
 }
