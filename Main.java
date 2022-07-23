@@ -50,11 +50,27 @@ public class Main{
     e2.skill("C","C#","Python");
     */
 
+    /*
     //Overriding
     Programmer e1 = new Programmer();
     e1.bonus();
     Accounting a1 = new Accounting();
     a1.bonus();
+    */
+    Ironman i1 = new Ironman();
+    i1.setAge("40");
+    i1.setName("Ironman");
+    i1.setJob("Business");
+    i1.skill("Shooting");
+    i1.displayHero();
+    
+    Thor t1 = new Thor();
+    t1.setAge("30");
+    t1.setName("Thor");
+    t1.setJob("God");
+    t1.skill("Thunder");
+    t1.weapon("Hammer");
+    t1.displayHero();
 
     }
 
