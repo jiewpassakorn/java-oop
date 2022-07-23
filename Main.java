@@ -36,6 +36,16 @@ public class Main{
         Company.service(); 
         
     */
+    Programmer p1 = new Programmer();
+    p1.setId("3");
+    p1.setName("John");
+    p1.setSalary(40000.0);
+    p1.displayEmployee();
+
+    Accounting a1 = new Accounting();
+    a1.setName("Anan");
+    a1.setSalary(30000.0);
+    a1.displayEmployee();
 
     }
 
